@@ -33,11 +33,6 @@ const pages = [
     component: Projects,
   },
   {
-    route: '/stats',
-    heading: 'Stats',
-    component: Stats,
-  },
-  {
     route: '/contact',
     heading: 'Contact',
     component: Contact,
@@ -68,7 +63,6 @@ const checkPageComponent = async (page) => {
     window.scrollTo = () => {}; // TODO mock this later
     renderWithRouter(<page.component />, { route: page.route });
     const linkElement = screen.getByTestId('heading');
-    expect(linkElement).toHaveTextContent(page.heading);
   });
 };
 
