@@ -27,5 +27,5 @@ jobs:
       run: | 
           git config user.name "mikhil123"
           git config user.email "mikhilwankhede19@gmail.com"
-          git remote set-url origin https://github.com/mikhil123/Portfolio.git 
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/mikhil123/Portfolio.git 
           npm run deploy
