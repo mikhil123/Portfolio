@@ -24,8 +24,28 @@ const skills = [
   },
   {
     title: 'Java',
-    competency: 5,
+    competency: 4,
     category: ['Languages', 'Java'],
+  },
+  {
+    title: 'Spring Boot',
+    competency: 4,
+    category: ['Framework'],
+  },
+  {
+    title: 'Spring',
+    competency: 3,
+    category: ['Framework'],
+  },
+  {
+    title: 'Spring Security',
+    competency: 4,
+    category: ['Framework'],
+  },
+  {
+    title: 'Angular JS',
+    competency: 2,
+    category: ['Framework'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
