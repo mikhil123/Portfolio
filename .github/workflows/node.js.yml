@@ -5,9 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ new_experience_4 ]
+    branches: [ main ]
   pull_request:
-    branches: [ new_experience_4 ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -30,8 +30,8 @@ jobs:
     - name: Build and Statically Render
       run: npm run predeploy
       env:
-        NODE_ENV: development
+        NODE_ENV: production
     - name: Test
       run: npm test
       env:
-        NODE_ENV: development
+        NODE_ENV: production
