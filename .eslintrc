@@ -7,7 +7,7 @@
     "jest": true
   },
   "rules": {
-  'linebreak-style': ['error','linux'],
+  'linebreak-style': ['error','unix'],
     "jsx-a11y/anchor-is-valid": ["error", {
       "components": ["Link"],
       "specialLink": ["to", "hrefLeft", "hrefRight"],
