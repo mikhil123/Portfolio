@@ -30,8 +30,8 @@ jobs:
     - name: Build and Statically Render
       run: npm run predeploy
       env:
-        NODE_ENV: production
+        NODE_ENV: development
     - name: Test
       run: npm test
       env:
-        NODE_ENV: production
+        NODE_ENV: development
