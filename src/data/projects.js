@@ -6,9 +6,7 @@ const data = [
     image: '',
     date: 'October 2021 to Present',
     desc:
-      'This project also knows Visa Account Updater or MasterCard Automatic Billing Updater that are offered by the credit ' 
-      +'card networks to automatically update subscription customer card data when cardholder information changes or goes out of date.'
-      + '',
+      'This project also knows Visa Account Updater or MasterCard Automatic Billing Updater that are offered by the credit card networks to automatically update subscription customer card data when cardholder information changes or goes out of date.'
   },
   {
     title: 'Settlement System',
