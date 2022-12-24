@@ -6,8 +6,8 @@ const data = [
     image: '',
     date: 'October 2021 to Present',
     desc:
-      'This project also knows Visa\'s Account Updater or MasterCard Automatic Billing Updater that are offered by the credit' 
-      +' card networks to automatically update subscription customer card data when cardholder information changes or goes out of date.'
+      'This project also knows Visa Account Updater or MasterCard Automatic Billing Updater that are offered by the credit ' 
+      +'card networks to automatically update subscription customer card data when cardholder information changes or goes out of date.'
       + '',
   },
   {
@@ -29,7 +29,7 @@ const data = [
       'This project was developed to facilitate small business owners to take full control of their loan repayments and'
       + 'at the same time reducing the default rate and hence benefiting the lender. '
       + '',
-  }, 
+  },
 ];
 
 export default data;
