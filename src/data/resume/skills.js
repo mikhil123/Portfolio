@@ -47,6 +47,66 @@ const skills = [
     competency: 2,
     category: ['Framework'],
   },
+  {
+    title: 'Cassandra',
+    competency: 3,
+    category: ['Databases', 'Languages'],
+  },
+  {
+    title: 'Postgres',
+    competency: 4,
+    category: ['Web Development', 'Databases', 'Languages'],
+  },
+  {
+    title: 'Docker',
+    competency: 3,
+    category: ['DevOps Tools'],
+  },
+  {
+    title: 'Jenkins',
+    competency: 3,
+    category: ['DevOps Tools'],
+  },
+  {
+    title: 'OpenShift',
+    competency: 4,
+    category: ['DevOps Tools'],
+  },
+  {
+    title: 'Ansible Tower',
+    competency: 4,
+    category: ['DevOps Tools'],
+  },
+  {
+    title: 'Opsgenie',
+    competency: 2,
+    category: ['DevOps Tools'],
+  },
+  {
+    title: 'Checkmarx',
+    competency: 2,
+    category: ['DevOps Tools'],
+  },
+  {
+    title: 'Blackduck',
+    competency: 3,
+    category: ['DevOps Tools'],
+  },
+  {
+    title: 'Splunk',
+    competency: 3,
+    category: ['DevOps Tools'],
+  },
+  {
+    title: 'Sysdig',
+    competency: 3,
+    category: ['DevOps Tools'],
+  },
+  {
+    title: 'Venfi',
+    competency: 4,
+    category: ['DevOps Tools'],
+  },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
 // this is a list of colors that I like. The length should be == to the
@@ -63,6 +123,18 @@ const colors = [
   '#d75858',
   '#747fff',
   '#64cb7a',
+  '#6968b3',
+  '#37b1f5',
+  '#40494e',
+  '#515dd4',
+  '#e47272',
+  '#cc7b94',
+  '#3896e2',
+  '#c3423f',
+  '#d75858',
+  '#747fff',
+  '#64cb7a',
+  '#6968b3',
 ];
 
 const categories = [

@@ -20,7 +20,7 @@ const SideBar = () => (
       <h2>About</h2>
       <p>Hi, I&apos;m Mikhil. I like building things.
         I am a <a href="http://nitc.ac.in/">NIT, Calicut</a> post-graduate in Information Security.
-        I specialize in rapidly building web applications.
+        I specialize in rapidly building scalable backend services and database.
       </p>
       <ul className="actions">
         <li>

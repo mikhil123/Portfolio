@@ -6,6 +6,12 @@ const courses = [
     university: 'Udemy',
   },
   {
+    title: 'Practical OpenShift for Developers - OpenShift 4',
+    number: 'March 2022',
+    link: 'https://www.udemy.com/certificate/UC-55661cf5-db89-4908-acd8-f2f73588eebe/',
+    university: 'Udemy',
+  },
+  {
     title: 'SQL and Relational Database 101 Certification',
     number: 'January 2021',
     link: 'https://cognitiveclass.ai/courses/learn-sql-relational-databases',
