@@ -25,7 +25,7 @@ jobs:
         REACT_APP_GA_TRACKING_ID: UA-68649021-1
         # This is set automatically by github
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: | 
+      run: |
           git config user.name "mikhil123"
           git config user.email "mikhilwankhede19@gmail.com"
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/mikhil123/Portfolio.git 
