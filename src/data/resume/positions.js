@@ -1,6 +1,6 @@
 const positions = [
   {
-    company: 'FIS',
+    company: 'WorldPay By FIS',
     position: 'Software Engineer II',
     link: '',
     daterange: 'October 2021 - Present',
