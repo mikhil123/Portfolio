@@ -37,7 +37,7 @@
     'prettier/prettier': [
         'error',
         {
-            endOfLine: 'auto', /* this setting should be included */
+            endOfLine: 'auto' /* this setting should be included */
         },
   },
   "plugins": [
