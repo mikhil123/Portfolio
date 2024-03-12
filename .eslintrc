@@ -7,7 +7,7 @@
     "jest": true
   },
   "rules": {
-  'linebreak-style': ['error','windows'],
+  'linebreak-style': ['error','unix'],
     "jsx-a11y/anchor-is-valid": ["error", {
       "components": ["Link"],
       "specialLink": ["to", "hrefLeft", "hrefRight"],
@@ -33,13 +33,6 @@
       "assignment": true,
       "return": true
     }],
-    'import/extensions': 'off',
-    'prettier/prettier': [
-        'error',
-        {
-            endOfLine: 'auto' /* this setting should be included */
-        },
-        ],
   },
   "plugins": [
     "react"
