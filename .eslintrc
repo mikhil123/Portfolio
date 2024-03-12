@@ -39,6 +39,7 @@
         {
             endOfLine: 'auto' /* this setting should be included */
         },
+        ],
   },
   "plugins": [
     "react"
