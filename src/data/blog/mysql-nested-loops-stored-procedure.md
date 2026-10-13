@@ -1,6 +1,6 @@
 ---
 title: Nested loops in MySQL stored procedures
-date: 2026-10-12
+date: 2019-08-05
 summary: Nested WHILE and LOOP examples, LEAVE and ITERATE, and how to avoid the NOT FOUND trap when nesting cursors.
 tags: MySQL, SQL, Stored procedures
 ---
