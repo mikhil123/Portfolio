@@ -131,7 +131,7 @@ The deployment half is where Harness differs most. Rather than a \`deploy.sh\`, 
 Harness is a good fit when you want deployments, approvals and rollbacks managed in the same tool as your builds, and you are tired of maintaining Jenkins plugins and agents. If your Jenkins setup is small and stable, the migration may not pay for itself. Either way, treat it as a chance to delete old jobs and standardize your pipelines, not just move them.
 `,i=`---
 title: Nested loops in MySQL stored procedures
-date: 2026-10-12
+date: 2019-08-05
 summary: Nested WHILE and LOOP examples, LEAVE and ITERATE, and how to avoid the NOT FOUND trap when nesting cursors.
 tags: MySQL, SQL, Stored procedures
 ---

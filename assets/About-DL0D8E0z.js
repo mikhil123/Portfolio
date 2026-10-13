@@ -1,4 +1,4 @@
-import{j as e,M as a}from"./index-0vQZGXN4.js";import{R as n}from"./react-markdown-KsWRWeSg.js";const s=`# Intro
+import{j as e,M as a}from"./index-DJituUuD.js";import{R as n}from"./react-markdown-0Gsa4D8g.js";const s=`# Intro
 
 I'm Mikhil, a passionate software engineer driven to create impactful solutions that address real-world business challenges. While I enjoy tackling complex technical problems, my true passion lies in using technology to solve practical problems that deliver tangible value.
 
