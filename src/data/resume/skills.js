@@ -1,154 +1,32 @@
-// TODO: Add Athletic Skills, Office Skills,
-// Data Engineering, Data Science, ML Engineering, ... ?
-
+// Each skill has a single display group. `competency` is a self-rating out of 5.
 const skills = [
-  {
-    title: 'Javascript',
-    competency: 4,
-    category: ['Web Development', 'Languages', 'Javascript'],
-  },
-  {
-    title: 'Amazon Web Services',
-    competency: 3,
-    category: ['Web Development', 'Tools'],
-  },
-  {
-    title: 'MYSQL',
-    competency: 4,
-    category: ['Web Development', 'Databases', 'Languages'],
-  },
-  {
-    title: 'HTML + SASS/SCSS/CSS',
-    competency: 3,
-    category: ['Web Development', 'Languages'],
-  },
-  {
-    title: 'Java',
-    competency: 4,
-    category: ['Languages', 'Java'],
-  },
-  {
-    title: 'Spring Boot',
-    competency: 4,
-    category: ['Framework'],
-  },
-  {
-    title: 'Spring',
-    competency: 3,
-    category: ['Framework'],
-  },
-  {
-    title: 'Spring Security',
-    competency: 4,
-    category: ['Framework'],
-  },
-  {
-    title: 'Angular JS',
-    competency: 2,
-    category: ['Framework'],
-  },
-  {
-    title: 'Cassandra',
-    competency: 3,
-    category: ['Databases', 'Languages'],
-  },
-  {
-    title: 'Postgres',
-    competency: 4,
-    category: ['Web Development', 'Databases', 'Languages'],
-  },
-  {
-    title: 'Docker',
-    competency: 3,
-    category: ['DevOps Tools'],
-  },
-  {
-    title: 'Jenkins',
-    competency: 3,
-    category: ['DevOps Tools'],
-  },
-  {
-    title: 'OpenShift',
-    competency: 4,
-    category: ['DevOps Tools'],
-  },
-  {
-    title: 'Ansible Tower',
-    competency: 4,
-    category: ['DevOps Tools'],
-  },
-  {
-    title: 'Opsgenie',
-    competency: 2,
-    category: ['DevOps Tools'],
-  },
-  {
-    title: 'Checkmarx',
-    competency: 2,
-    category: ['DevOps Tools'],
-  },
-  {
-    title: 'Blackduck',
-    competency: 3,
-    category: ['DevOps Tools'],
-  },
-  {
-    title: 'Splunk',
-    competency: 3,
-    category: ['DevOps Tools'],
-  },
-  {
-    title: 'Sysdig',
-    competency: 3,
-    category: ['DevOps Tools'],
-  },
-  {
-    title: 'Venfi',
-    competency: 4,
-    category: ['DevOps Tools'],
-  },
-  {
-    title: 'Apache Spark',
-    competency: 3,
-    category: ['Languages', 'DevOps Tools'],
-  },
-].map((skill) => ({ ...skill, category: skill.category.sort() }));
+  { title: 'Java', competency: 4, group: 'Backend & Data' },
+  { title: 'Spring Boot', competency: 4, group: 'Backend & Data' },
+  { title: 'Spring Security', competency: 4, group: 'Backend & Data' },
+  { title: 'Spring', competency: 3, group: 'Backend & Data' },
+  { title: 'Apache Spark', competency: 3, group: 'Backend & Data' },
 
-// this is a list of colors that I like. The length should be == to the
-// number of categories. Re-arrange this list until you find a pattern you like.
-const colors = [
-  '#6968b3',
-  '#37b1f5',
-  '#40494e',
-  '#515dd4',
-  '#e47272',
-  '#cc7b94',
-  '#3896e2',
-  '#c3423f',
-  '#d75858',
-  '#747fff',
-  '#64cb7a',
-  '#6968b3',
-  '#37b1f5',
-  '#40494e',
-  '#515dd4',
-  '#e47272',
-  '#cc7b94',
-  '#3896e2',
-  '#c3423f',
-  '#d75858',
-  '#747fff',
-  '#64cb7a',
-  '#6968b3',
+  { title: 'Postgres', competency: 4, group: 'Databases' },
+  { title: 'MySQL', competency: 4, group: 'Databases' },
+  { title: 'Cassandra', competency: 3, group: 'Databases' },
+
+  { title: 'Amazon Web Services', competency: 3, group: 'Cloud & DevOps' },
+  { title: 'OpenShift', competency: 4, group: 'Cloud & DevOps' },
+  { title: 'Ansible Tower', competency: 4, group: 'Cloud & DevOps' },
+  { title: 'Venafi', competency: 4, group: 'Cloud & DevOps' },
+  { title: 'Docker', competency: 3, group: 'Cloud & DevOps' },
+  { title: 'Jenkins', competency: 3, group: 'Cloud & DevOps' },
+  { title: 'Splunk', competency: 3, group: 'Cloud & DevOps' },
+  { title: 'Sysdig', competency: 3, group: 'Cloud & DevOps' },
+  { title: 'Blackduck', competency: 3, group: 'Cloud & DevOps' },
+  { title: 'Opsgenie', competency: 2, group: 'Cloud & DevOps' },
+  { title: 'Checkmarx', competency: 2, group: 'Cloud & DevOps' },
+
+  { title: 'JavaScript', competency: 4, group: 'Frontend' },
+  { title: 'HTML + SASS/SCSS/CSS', competency: 3, group: 'Frontend' },
+  { title: 'AngularJS', competency: 2, group: 'Frontend' },
 ];
 
-const categories = [
-  ...new Set(skills.reduce((acc, { category }) => acc.concat(category), [])),
-]
-  .sort()
-  .map((category, index) => ({
-    name: category,
-    color: colors[index],
-  }));
+const groups = [...new Set(skills.map((s) => s.group))];
 
-export { categories, skills };
+export { groups, skills };

@@ -1,8 +1,12 @@
 const routes = [
   {
     index: true,
-    label: "Mikhil Wankhede'",
+    label: 'mikhil.',
     path: '/',
+  },
+  {
+    label: 'About',
+    path: '/about',
   },
   {
     label: 'Resume',
@@ -13,8 +17,13 @@ const routes = [
     path: '/projects',
   },
   {
-    label: 'Contact',
+    label: 'Blog',
+    path: '/blog',
+  },
+  {
+    label: 'Say hi',
     path: '/contact',
+    cta: true,
   },
 ];
 

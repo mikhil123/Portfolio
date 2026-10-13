@@ -1,13 +1,13 @@
 const positions = [
   {
-    company: 'WorldPay By FIS',
+    company: 'Worldpay by FIS',
     position: 'Software Engineer II',
     link: '',
     daterange: 'October 2021 - Present',
     points: [
       'Developed and implemented an Account Updater Service using Java technologies to improve customer experience and reduce payment declines.',
       'Owned and documented numerous RESTful WebServices, playing a key role in their design and implementation from scratch to integration with the Data Access Object (DAO) layer.',
-      'Contributed significantly to project DevOps activities by leveraging tools like Docker, Jenkins, OpenShift, and more (Ansible Tower, Opsgenie, Checkmarx, Blackduck, Splunk, Sysdig, Nexus, Venfi, Keytools, SonarQube).',
+      'Contributed significantly to project DevOps activities by leveraging tools like Docker, Jenkins, OpenShift, and more (Ansible Tower, Opsgenie, Checkmarx, Blackduck, Splunk, Sysdig, Nexus, Venafi, Keytool, SonarQube).',
       'Championed development best practices including version control, code reviews, unit testing, continuous integration, performance testing, security testing, and comprehensive documentation.',
     ],
   },

@@ -1,6 +1,8 @@
 {
   "name": "personal-site",
-  "version": "4.0.0",
+  "version": "5.0.0",
+  "private": true,
+  "type": "module",
   "homepage": "https://mikhilwankhede.com",
   "license": "MIT",
   "repository": {
@@ -8,64 +10,45 @@
     "url": "https://github.com/mikhil123/Portfolio.git"
   },
   "engines": {
-    "node": ">=14.x"
+    "node": ">=18"
   },
   "scripts": {
-    "build": "rimraf ./build && react-scripts build",
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "node scripts/postbuild.mjs",
+    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "lint": "eslint $(git ls-files '*.js')",
-    "test": "react-scripts test --watchAll=false",
-    "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js"
+    "lint": "eslint --ext .js,.jsx src",
+    "test": "vitest run"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "0.1.18",
-    "caniuse-lite": "^1.0.30001441",
-    "dayjs": "^1.11.3",
-    "gh-pages": "^4.0.0",
-    "joi": "^17.12.2",
     "prop-types": "^15.8.1",
-    "raw.macro": "^0.4.2",
-    "react": "^17.0.1",
-    "react-burger-menu": "^3.0.8",
-    "react-dom": "^17.0.1",
-    "react-ga": "^3.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-helmet-async": "^1.3.0",
-    "react-markdown": "^5.0.3",
-    "react-router-dom": "^5.2.0",
-    "react-snap": "^1.23.0",
-    "rimraf": "^3.0.2"
+    "react-markdown": "^8.0.7",
+    "react-router-dom": "^5.3.4",
+    "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
-    "react-scripts": "^5.0.1",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^11.2.3",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.19.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^12.1.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "6.5.1",
-    "eslint-plugin-react": "^7.30.0",
-    "sass": "^1.52.3",
-    "source-map-explorer": "^2.5.2"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "reactSnap": {
-    "fixWebpackChunksIssue": false
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "gh-pages": "^6.3.0",
+    "jsdom": "^26.0.0",
+    "vite": "^6.3.0",
+    "vitest": "^3.1.0"
   }
 }
